@@ -75,6 +75,8 @@ this.listaPedidosRealizados = this.listaPedidosRealizados.filter(
 );
 ```
 
+Na publicacao web, a API mockada usa o My JSON Server. Como esse servico simula POST/PATCH/DELETE sem persistir os dados no repositorio, os pedidos criados no navegador tambem sao guardados em `localStorage` quando a URL de producao aponta para `my-json-server.typicode.com`. Dessa forma, o fluxo publicado continua demonstrando a atualizacao imediata da lista apos cadastrar, editar ou excluir pedidos.
+
 ## Como executar localmente
 
 Instale as dependencias:
